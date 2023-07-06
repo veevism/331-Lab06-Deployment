@@ -10,7 +10,6 @@ const { message } = storeToRefs(store)
 
 <template>
   <header class="max-h-screen leading-normal">
-    created by VeeviDev
     <div id="flashMessage" v-if="message" class="animate-yellowfade">
       <h4 class="text-lg">{{ message }}</h4>
     </div>
@@ -20,6 +19,8 @@ const { message } = storeToRefs(store)
     </nav>
   </header>
   <RouterView />
+  <h1> created by VeeviDev
+  </h1>
 </template>
 
 <style>
