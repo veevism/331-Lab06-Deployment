@@ -1,0 +1,56 @@
+name: Deploy to Aws Docker on merge
+'on':
+  push:
+    branches:
+      - prod-docker
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - 
+      name: Checkout
+      uses: actions/checkout@v2
+    - 
+      name: Set up QEMU
+      uses: docker/setup-qemu-action@v2
+    - 
+      name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+    - 
+      name: Login to DockerHub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_TOKEN }}
+    -
+      name: Build and push
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        push: true
+        tags: soraweesri/se331-lab06:latest
+    - 
+      name: copy file via ssh password
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: ${{ secrets.HOST_SERVER }}
+        username: ${{ secrets.HOST_USER_NAME }}
+        key: ${{ secrets.HOST_SSH_PRIVATE_KEY }}
+        port: 22
+        source: "docker-compose.yml"
+        target: "/home/ubuntu/lab6"
+    -
+      name: docker compose
+      uses: appleboy/ssh-action@v0.1.10
+      with:
+        host: ${{ secrets.HOST_SERVER }}
+        username: ${{ secrets.HOST_USER_NAME }}
+        key: ${{ secrets.HOST_SSH_PRIVATE_KEY }}
+        port: 22
+        script: |
+          cd /home/ubuntu/lab6
+            echo ${{ secrets.DOCKER_HUB_TOKEN }} | docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
+          docker compose down
+          docker compose pull
+          docker compose up -d
+          rm -rf /home/ubuntu/lab6

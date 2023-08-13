@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  web:
+    image: "soraweesri/se331-lab06:latest"
+    ports:
+      - 8001:80
