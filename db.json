@@ -1,136 +1,99 @@
 {
-  "events": [
-    {
-      "id": 123,
-      "category": "animal welfare",
-      "title": "Cat Adoption Day",
-      "description": "Find your new feline friend at this event.",
-      "location": "Meow Town",
-      "date": "January 28, 2022",
-      "time": "12:00",
-      "petsAllowed": true,
-      "organizer": "Kat Laydee"
-    },
-    {
-      "id": 456,
-      "category": "food",
-      "title": "Community Gardening",
-      "description": "Join us as we tend to the community edible plants.",
-      "location": "Flora City",
-      "date": "March 14, 2022",
-      "time": "10:00",
-      "petsAllowed": true,
-      "organizer": "Fern Pollin"
-    },
-    {
-      "id": 789,
-      "category": "sustainability",
-      "title": "Beach Cleanup",
-      "description": "Help pick up trash along the shore.",
-      "location": "Playa Del Carmen",
-      "date": "July 22, 2022",
-      "time": "11:00",
-      "petsAllowed": false,
-      "organizer": "Carey Wales"
-    },
-    {
-      "id": 1001,
-      "category": "animal welfare",
-      "title": "Dog Adoption Day",
-      "description": "Find your new canine friend at this event.",
-      "location": "Woof Town",
-      "date": "August 28, 2022",
-      "time": "12:00",
-      "petsAllowed": true,
-      "organizer": "Dawg Dahd"
-    },
-    {
-      "id": 1002,
-      "category": "food",
-      "title": "Canned Food Drive",
-      "description": "Bring your canned food to donate to those in need.",
-      "location": "Tin City",
-      "date": "September 14, 2022",
-      "time": "3:00",
-      "petsAllowed": true,
-      "organizer": "Kahn Opiner"
-    },
-    {
-      "id": 1003,
-      "category": "sustainability",
-      "title": "Highway Cleanup",
-      "description": "Help pick up trash along the highway.",
-      "location": "Highway 50",
-      "date": "July 22, 2022",
-      "time": "11:00",
-      "petsAllowed": false,
-      "organizer": "Brody Kill"
-    },
-    {
-      "id": 123,
-      "category": "animal welfare",
-      "title": "Cat Adoption Day",
-      "description": "Find your new feline friend at this event.",
-      "location": "Meow Town",
-      "date": "January 28, 2022",
-      "time": "12:00",
-      "petsAllowed": true,
-      "organizer": "Kat Laydee"
-    },
-    {
-      "id": 456,
-      "category": "food",
-      "title": "Community Gardening",
-      "description": "Join us as we tend to the community edible plants.",
-      "location": "Flora City",
-      "date": "March 14, 2022",
-      "time": "10:00",
-      "petsAllowed": true,
-      "organizer": "Fern Pollin"
-    },
-    {
-      "id": 789,
-      "category": "sustainability",
-      "title": "Beach Cleanup",
-      "description": "Help pick up trash along the shore.",
-      "location": "Playa Del Carmen",
-      "date": "July 22, 2022",
-      "time": "11:00",
-      "petsAllowed": false,
-      "organizer": "Carey Wales"
-    },
-    {
-      "id": 1001,
-      "category": "animal welfare",
-      "title": "Dog Adoption Day",
-      "description": "Find your new canine friend at this event.",
-      "location": "Woof Town",
-      "date": "August 28, 2022",
-      "time": "12:00",
-      "petsAllowed": true,
-      "organizer": "Dawg Dahd"
-    },
-    {
-      "id": 1002,
-      "category": "food",
-      "title": "Canned Food Drive",
-      "description": "Bring your canned food to donate to those in need.",
-      "location": "Tin City",
-      "date": "September 14, 2022",
-      "time": "3:00",
-      "petsAllowed": true,
-      "organizer": "Kahn Opiner"
-    },
-    {
-      "id": 1003,
-      "category": "sustainability",
-      "title": "Highway Cleanup",
-      "description": "Help pick up trash along the highway.",
-      "location": "Highway 50",
-      "date": "July 22, 2022",
-      "time": "11:00",
-      "petsAllowed": false,
-      "organizer": "Brody Kill"
-    }
+  "customers" : [
+      {
+          "shop": "ชาบูตี๋ใหญ่",
+          "branch": 2,
+          "qty_table": 123,
+          "shop_type": "ร้านบุฟเฟต์",
+          "exp_date": "09/11/2566",
+          "sale_name": "Watcharapol Limthammalert"
+      },
+      {
+          "shop": "โรงพยาบาลรามคำแหง",
+          "branch": 1,
+          "qty_table": 40,
+          "shop_type": "โรงพยาบาล",
+          "exp_date": "10/11/2566",
+          "sale_name": "Watcharapol Limthammalert"
+      },
+      {
+          "shop": "ตี๋น้อยหมูกะทะ",
+          "branch": 1,
+          "qty_table": 123,
+          "shop_type": "ร้านหมูกระทะ A Lar Carte",
+          "exp_date": "11/11/2566",
+          "sale_name": "Watcharapol Limthammalert"
+      },
+      {
+          "shop": "ตี๋๊เล็กรีสอร์ท",
+          "branch": 3,
+          "qty_table": 20,
+          "shop_type": "รีสอร์ท",
+          "exp_date": "12/11/2566",
+          "sale_name": "Watcharapol Limthammalert"
+      },
+      {
+          "shop": "สุกี้ตี๋หิด",
+          "branch": 1,
+          "qty_table": 30,
+          "shop_type": "ร้านบุฟเฟต์",
+          "exp_date": "13/11/2566",
+          "sale_name": "Watcharapol Limthammalert"
+      },
+      {
+          "shop": "ตี๋ใหญ่บาร์",
+          "branch": 4,
+          "qty_table": 80,
+          "shop_type": "ร้านกลางคืน",
+          "exp_date": "14/11/2566",
+          "sale_name": "Watcharapol Limthammalert"
+      },
+      {
+          "shop": "สุกี้ตี๋เล็ก",
+          "branch": 1,
+          "qty_table": 20,
+          "shop_type": "ร้านบุฟเฟต์",
+          "exp_date": "15/11/2566",
+          "sale_name": "Watcharapol Limthammalert"
+      },    {
+          "shop": "ร้านกาแฟสดสวนดอกไม้",
+          "branch": 1,
+          "qty_table": 15,
+          "shop_type": "ร้านกาแฟ",
+          "exp_date": "20/11/2566",
+          "sale_name": "Somchai Srisuk"
+      },
+      {
+          "shop": "สปาสุขภาพสมุนไพร",
+          "branch": 2,
+          "qty_table": 10,
+          "shop_type": "สปา",
+          "exp_date": "21/11/2566",
+          "sale_name": "Suda Ratanakul"
+      },
+      {
+          "shop": "โรงหนังพาราไดซ์",
+          "branch": 3,
+          "qty_table": 200,
+          "shop_type": "โรงหนัง",
+          "exp_date": "22/11/2566",
+          "sale_name": "Narong Petcharat"
+      },
+      {
+          "shop": "ร้านอาหารซีฟู้ดปากน้ำ",
+          "branch": 1,
+          "qty_table": 30,
+          "shop_type": "ร้านอาหาร",
+          "exp_date": "23/11/2566",
+          "sale_name": "Chaiya Thongkham"
+      },
+      {
+          "shop": "ห้องสมุดวิทยาศาสตร์",
+          "branch": 1,
+          "qty_table": 50,
+          "shop_type": "ห้องสมุด",
+          "exp_date": "24/11/2566",
+          "sale_name": "Pimchanok Luevisadpaibul"
+      }
   ]
 }
