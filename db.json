@@ -1,6 +1,7 @@
 {
-  "customers" : [
+  "customers": [
       {
+          "_id": "001",
           "shop": "ชาบูตี๋ใหญ่",
           "branch": 2,
           "qty_table": 123,
@@ -9,6 +10,7 @@
           "sale_name": "Watcharapol Limthammalert"
       },
       {
+          "_id": "002",
           "shop": "โรงพยาบาลรามคำแหง",
           "branch": 1,
           "qty_table": 40,
@@ -17,6 +19,7 @@
           "sale_name": "Watcharapol Limthammalert"
       },
       {
+          "_id": "003",
           "shop": "ตี๋น้อยหมูกะทะ",
           "branch": 1,
           "qty_table": 123,
@@ -25,6 +28,7 @@
           "sale_name": "Watcharapol Limthammalert"
       },
       {
+          "_id": "004",
           "shop": "ตี๋๊เล็กรีสอร์ท",
           "branch": 3,
           "qty_table": 20,
@@ -33,6 +37,7 @@
           "sale_name": "Watcharapol Limthammalert"
       },
       {
+          "_id": "005",
           "shop": "สุกี้ตี๋หิด",
           "branch": 1,
           "qty_table": 30,
@@ -41,6 +46,7 @@
           "sale_name": "Watcharapol Limthammalert"
       },
       {
+          "_id": "006",
           "shop": "ตี๋ใหญ่บาร์",
           "branch": 4,
           "qty_table": 80,
@@ -49,13 +55,16 @@
           "sale_name": "Watcharapol Limthammalert"
       },
       {
+          "_id": "007",
           "shop": "สุกี้ตี๋เล็ก",
           "branch": 1,
           "qty_table": 20,
           "shop_type": "ร้านบุฟเฟต์",
           "exp_date": "15/11/2566",
           "sale_name": "Watcharapol Limthammalert"
-      },    {
+      },
+      {
+          "_id": "008",
           "shop": "ร้านกาแฟสดสวนดอกไม้",
           "branch": 1,
           "qty_table": 15,
@@ -64,6 +73,7 @@
           "sale_name": "Somchai Srisuk"
       },
       {
+          "_id": "009",
           "shop": "สปาสุขภาพสมุนไพร",
           "branch": 2,
           "qty_table": 10,
@@ -72,6 +82,7 @@
           "sale_name": "Suda Ratanakul"
       },
       {
+          "_id": "010",
           "shop": "โรงหนังพาราไดซ์",
           "branch": 3,
           "qty_table": 200,
@@ -80,6 +91,7 @@
           "sale_name": "Narong Petcharat"
       },
       {
+          "_id": "011",
           "shop": "ร้านอาหารซีฟู้ดปากน้ำ",
           "branch": 1,
           "qty_table": 30,
@@ -88,6 +100,7 @@
           "sale_name": "Chaiya Thongkham"
       },
       {
+          "_id": "012",
           "shop": "ห้องสมุดวิทยาศาสตร์",
           "branch": 1,
           "qty_table": 50,
